@@ -1,0 +1,65 @@
+{
+  "mcpServers": {
+    "amap-maps": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@amap/amap-maps-mcp-server"
+      ],
+      "env": {
+        "AMAP_MAPS_API_KEY": "c612c400b73ffa2b2ead04390a02c24b"
+      }
+    },
+    "filesystem-mcp-server": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@cyanheads/filesystem-mcp-server",
+        "--key",
+        "0b774df5-81df-4b41-9cdb-10f7fb0f6a5a"
+      ]
+    },
+    "MySQLServer": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "G:/workspace/study-ai/study_mcp/mcp_tools_server",
+        "run",
+        "MySQLServer.py"
+      ]
+    },
+    "Weather": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "G:/workspace/study-ai/study_mcp/mcp_tools_server",
+        "run",
+        "Weather.py"
+      ]
+    },
+    "Search": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "G:/workspace/study-ai/study_mcp/mcp_tools_server",
+        "run",
+        "Search.py"
+      ]
+    },
+    "MyTools": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "G:/workspace/study-ai/study_mcp/mcp_tools_server",
+        "run",
+        "MyTools.py"
+      ]
+    }
+  }
+}
